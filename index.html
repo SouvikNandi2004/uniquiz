@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <h1>UniQuiz</h1>
+    <h3>Under Disunic Project</h3>
+    <div id="quiz-container">
+        <div id="question-container"></div>
+        <div id="answers-container">
+            <!-- <div class="answer">
+                <input type="radio" name="answer" value="Pulmonary Artery">
+                <label>Pulmonary Artery</label>
+            </div>
+
+            <div class="answer">
+                <input type="radio" name="answer" value="Aorta">
+                <label>Aorta</label>
+            </div>
+
+            <div class="answer">
+                <input type="radio" name="answer" value="Coronary Artery">
+                <label>Coronary Artery</label>
+            </div>
+
+            <div class="answer">
+                <input type="radio" name="answer" value="Pulmonary Vein">
+                <label>Pulmonary Vein</label>
+            </div> -->
+        </div>
+        
+    </div>
+    <button id="submit-btn">Submit</button>
+</body>
+
+</html>
+
+<style>
+    body {
+        margin: 0px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: rgb(0, 68, 255);
+    }
+
+    h3 {
+        text-align: center;
+        color: rgb(255, 0, 234);
+    }
+
+    div#quiz-container {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        box-shadow: 0px 0px 5px 0px rgb(182, 182, 182);
+        border-radius: 10px;
+    }
+    div#question-container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    div#answers-container{
+        margin-bottom: 10px;
+        font-size: 19px;
+    }
+    button#submit-btn{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        float: right;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+    .answer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    button{
+        border: none;
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        background: transparent;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        box-shadow: 0px 0px 5px 0px rgb(204, 202, 202);
+        /* float: right; */
+        margin-right: 20px;
+    }
+    button.answer.selected{
+        border-bottom: 3px solid cornflowerblue;
+    }
+</style>
